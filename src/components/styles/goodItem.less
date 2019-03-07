@@ -1,0 +1,59 @@
+/*
+ * @Author: 杜梦 
+ * @Date: 2018-07-03 10:47:45 
+ * @Last Modified by:   杜梦 
+ * @Last Modified time: 2018-07-03 10:47:45 
+ */
+.goodList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #F5F5F9;
+    &>div:nth-child(odd){
+        padding-right: 10px;
+    }
+    &>div:nth-child(even){
+        padding-left: 10px;
+    }
+    .itemBox{
+        flex: 0 0 50%;
+        margin-bottom: 15px;
+        background: #FFFFFF;
+    }
+    .itemBody{
+        width: 100%;
+        box-shadow: 5px 5px 5px #F5F5F9;
+        &>.imgbox{
+            width: 100%;
+            height: 4rem;
+            &>img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .infoBox{
+            width: 100%;
+            height: 110px;
+            padding: 15px 20px;
+            overflow: hidden;
+            border-width: 0 1PX 1PX 1PX;
+            border-color: #F5F5F9;
+            border-style: solid;
+            &>p{
+                width: calc(~'50vw - 75px');
+                line-height: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            &>.name{
+                font-size:26px;
+                
+            }
+            &>.price{
+                font-size:30px;
+                color:  #ffbe00;
+            }
+        }
+    }
+}
